@@ -128,8 +128,8 @@ The app uses the OpenWeatherMap API for weather data. To use real weather data:
    const WEATHER_API_KEY = 'your_api_key_here';
    ```
 
-### Quotes API
-The app uses the [Quotable API](https://github.com/lukePeavey/quotable) for daily inspirational quotes. This is a free, public API that doesn't require an API key.
+### Quotes
+The app includes a curated collection of inspirational quotes that are displayed randomly on the dashboard. Quotes are stored locally in the code for fast loading and offline access.
 
 ## Browser Compatibility
 

@@ -717,6 +717,53 @@ body {
     border: 1px solid var(--border-light);
 }
 
+.weather-search {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.weather-search input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 15px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.weather-search input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--card-bg);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.weather-search button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.weather-search button:hover {
+    background: var(--primary-dark);
+    box-shadow: var(--shadow-md);
+}
+
+.weather-search button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 .weather-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
